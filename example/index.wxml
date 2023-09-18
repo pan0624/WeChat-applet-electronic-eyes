@@ -1,0 +1,38 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="page">
+    <view class="page__hd">
+      <view class="weui-cells__title">充电桩列表</view>
+      <view class="page__ft">
+      <button size="mini" type="primary" plain="true" bindtap="runScript1">三食堂左侧</button>
+      <button size="mini" type="primary" plain="true" bindtap="runScript2">三食堂右侧</button>
+      <button size="mini" type="primary" plain="true" bindtap="runScript3">兰苑外左</button>
+      <button size="mini" type="primary" plain="true" bindtap="runScript4">兰苑外中</button>
+      <button size="mini" type="primary" plain="true" bindtap="runScript5">兰苑外右</button>
+      <button size="mini" type="primary" plain="true" bindtap="runScript6">兰苑内右1</button>
+      <button size="mini" type="primary" plain="true" bindtap="runScript7">兰苑内右2</button>
+      <button size="mini" type="primary" plain="true" bindtap="runScript8">兰苑内右3</button>
+      <button size="mini" type="primary" plain="true" bindtap="runScript9">兰苑内右4</button>
+      </view>
+    </view>
+    <view class="page__bd">
+      <div class="weui-cells__title">空充电桩ID:</div>
+      <div class="weui-cells">
+          <div class="weui-cell">
+              <div class="weui-cell__bd">
+                <view class="weui-cells__title"> {{item.id}} </view>
+              </div>
+          </div>
+      </div>
+      <view class="weui-cells">
+        <block wx:for="{{chargers}}" wx:key="id">
+          <block wx:if="{{item.id}}">
+            <view class="weui-cell">
+              <view class="weui-cells__title">{{item.id}}</view>
+            </view>
+          </block>
+        </block>
+      </view>
+    </view>   
+  </view>
+</view>

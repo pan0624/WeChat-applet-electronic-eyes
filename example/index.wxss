@@ -1,0 +1,46 @@
+/* index.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.page {
+  background-color: #ffffff;
+}
+
+.page__hd {
+  padding: 40rpx;
+  text-align: center;
+}
+
+.page__title {
+  font-size: 20rpx;
+  font-weight: bold;
+}
+
+.page__bd {
+  padding: 20rpx;
+}
+
+.weui-cells {
+  margin-top: 20rpx;
+}
+
+.weui-cell {
+  padding: 10rpx;
+}
+
+.weui-cell__bd {
+  font-size: 14rpx;
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
