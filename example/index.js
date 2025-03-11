@@ -2,6 +2,9 @@ Page({
   data: {
     chargers: [],
   },
+  data: {
+    selectedButtonIndex: null
+  },
   onLoad: function () {
     // 页面加载时不运行脚本
   },
@@ -15,7 +18,6 @@ Page({
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       data: {
-        //2e0ae723ad54430d889a60a318aef85a
         token: "aaa",
         client_id: "1",
         app_id: "dd",
@@ -55,30 +57,58 @@ Page({
     });
   },
   runScript1: function () {
-    this.runScript("242043"); // 调用runScript函数并传递不同的设备ID参数
+    this.setData({
+      selectedButtonIndex: 1
+    });
+    this.runScript("242043");// 调用runScript函数并传递不同的设备ID参数
+  
   },
   runScript2: function () {
+    this.setData({
+      selectedButtonIndex: 2
+    });
     this.runScript("268217"); // 调用runScript函数并传递不同的设备ID参数
   },
   runScript3: function () {
+    this.setData({
+      selectedButtonIndex: 3
+    });
     this.runScript("409084"); // 调用runScript函数并传递不同的设备ID参数
   },
   runScript4: function () {
+    this.setData({
+      selectedButtonIndex: 4
+    });
     this.runScript("409082"); // 调用runScript函数并传递不同的设备ID参数
   },
   runScript5: function () {
+    this.setData({
+      selectedButtonIndex: 5
+    });
     this.runScript("409081"); // 调用runScript函数并传递不同的设备ID参数
   },
   runScript6: function () {
+    this.setData({
+      selectedButtonIndex: 6
+    });
     this.runScript("240733"); // 调用runScript函数并传递不同的设备ID参数
   },
   runScript7: function () {
+    this.setData({
+      selectedButtonIndex: 7
+    });
     this.runScript("240734"); // 调用runScript函数并传递不同的设备ID参数
   },
   runScript8: function () {
+    this.setData({
+      selectedButtonIndex: 8
+    });
     this.runScript("228179"); // 调用runScript函数并传递不同的设备ID参数
   },
   runScript9: function () {
+    this.setData({
+      selectedButtonIndex: 9
+    });
     this.runScript("228086"); // 调用runScript函数并传递不同的设备ID参数
   }
 });
