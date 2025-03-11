@@ -1,16 +1,20 @@
 
 
 # 校园充电站嗅探项目
+本项目文件位于example文件夹中，index.wxml即index.html index.js与web编程使用方法一致
 ## 来点电小程序分析及嗅探
 ### 分析抓包流量
 
-**
+
 https://api.power.powerliber.com/client/1/device/post-list
-通过token，client_id，devices_id检验，devices_id=242043 即充电桩群位置编号
+通过token，client_id，devices_id检验，
+devices_id=242043 即充电桩群位置编号
 暂时未知是否含其他校验方式
+
 token无过期机制，新建用户获取永久token即可
+
 token与ua数据不绑定
-**
+
 返回响应中获取相关信息如下
 ```js
 "id":457800,充电桩号，顺序+1连接
